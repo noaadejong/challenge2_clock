@@ -1,0 +1,123 @@
+html#background {
+  background: url(images/background.jpg) no-repeat left center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -9999;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    width: 100%;
+}
+.content-sun {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+}
+div#clock {
+    font-size: 3em;
+    color: #fff;
+    bottom: 50%;
+    position: absolute;
+    width: 100%;
+}
+div#date {
+    width: 100%;
+    font-size: 1.4em;
+    color: #fff;
+    position: absolute;
+    bottom: 45%;
+    text-align: center;
+}
+/* -------------------------------------------- ZONNESTELSEL ELEMENTEN -------------------------------------------- */
+img#myImage {
+    position: absolute;
+    width: 15%;
+    margin-left: 100px;
+}
+img#foto {
+    position: absolute;
+    width: 10%;
+    margin-left: 300px;
+
+}
+img#raket {
+    width: 50px;
+    height: 50px;
+}
+
+img#raket {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    -webkit-animation: mymove infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+    animation: mymove infinite;
+    animation-duration: 19s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {right: 10px;}
+    to {left: 100%;}
+}
+
+@keyframes mymove {
+    from {right: -100px;}
+    to {right: 100%;}
+}
+/* -------------------------------------------- MEDIA -------------------------------------------- */
+
+@media only screen and (min-width: 700px) {
+    /* For tablets: */
+    div#clock {
+        font-size: 5em;
+    }
+    div#date {
+        font-size: 2em;
+    }
+    img#myImage {
+        width: 10%;
+        margin-left: 250px;
+    }
+    img#foto {
+        width: 8%;
+        margin-left: 550px;
+    }
+    img#raket {
+        width: 75px;
+        height: 75px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    /* For desktop: */
+    div#clock {
+        font-size: 8em;
+    }
+    div#date {
+        font-size: 2.4em;
+    }
+    img#myImage {
+        width: 10%;
+        margin-left: 250px;
+        z-index: -10;
+    }
+    img#foto {
+        width: 5%;
+        margin-left: 550px;
+    }
+    img#raket {
+        width: 100px;
+        height: 100px;
+    }
+}
