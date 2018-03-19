@@ -38,6 +38,10 @@ div#date {
     bottom: 45%;
     text-align: center;
 }
+#text {
+    color: red;
+    font-size: 40px;
+}
 /* -------------------------------------------- ZONNESTELSEL ELEMENTEN -------------------------------------------- */
 img#myImage {
     position: absolute;

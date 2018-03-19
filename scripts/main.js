@@ -109,3 +109,8 @@ function changeBg() {
  }
 changeBg();
  setInterval(function(){ changeBg(); }, 300000); //300000 means 5 min
+
+
+
+TweenMax.staggerFrom("#clock", 3, {x: 450, ease:Power1.easeOut}, 0.1);
+TweenMax.staggerFrom("#date", 3, {y: -550, ease:Power1.easeOut}, 0.1);
